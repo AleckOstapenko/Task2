@@ -20,18 +20,19 @@ let appData = {
 // appData.expenses[a1] = a2;
 // appData.expenses[a3] = a4;
 
-// for (let i = 0; i < 2; i++) {
-// 	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
-// 		b = prompt("Во сколько обойдется?", '');
+ for (let i = 0; i < 2; i++) {
+ 	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
+ 		b = prompt("Во сколько обойдется?", '');
 		
-// 		if (typeof(a) != null && typeof(b) != null
-// 			&& a != '' && b != '' && a.length < 50) {
-// 				console.log('done!');
-// 				appData.expenses[a] = b;
-// 		}	else {
-
-// 		}
-// }
+ 		if (typeof(a) != null && typeof(b) != null
+ 			&& a != '' && b != '' && a.length < 50) {
+ 				console.log('done!');
+ 				appData.expenses[a] = b;
+ 		} else {
+			console.log('bad data!');
+			i--;
+ 		}
+ }
 
 // let i = 0;
 // while (i < 2) {
@@ -43,26 +44,26 @@ let appData = {
 // 				console.log('done!');
 // 				appData.expenses[a] = b;
 // 				i++;
-// 		}	else {
-
-// 		}
+// 		} else {
+//		 	console.log('bad data!');
+//		}
 // }
 
-let i = 0;
-do {
-	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
-		b = prompt("Во сколько обойдется?", '');
+// let i = 0;
+// do {
+// 	let a = prompt("Введите обязательную статью расходов в этом месяце", ''),
+// 		b = prompt("Во сколько обойдется?", '');
 		
-		if (typeof(a) != null && typeof(b) != null
-			&& a != '' && b != '' && a.length < 50) {
-				console.log('done!');
-				appData.expenses[a] = b;
-				i++;
-		}	else {
-
-		}
-}
-while (i < 2);
+// 		if (typeof(a) != null && typeof(b) != null
+// 			&& a != '' && b != '' && a.length < 50) {
+// 				console.log('done!');
+// 				appData.expenses[a] = b;
+// 				i++;
+//		} else {
+//		 	console.log('bad data!');
+//		}
+// }
+// while (i < 2);
 
 appData.moneyPerDay = appData.budget / 30;
 
